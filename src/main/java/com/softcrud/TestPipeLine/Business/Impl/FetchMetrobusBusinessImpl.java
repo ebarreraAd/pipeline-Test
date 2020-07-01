@@ -237,7 +237,6 @@ public class FetchMetrobusBusinessImpl implements FetchMetrobusBusiness {
             point1_lat = lat_array.get(i) - latitude;
             point1_long = long_array.get(i) - longitude;
             point2_lat = lat_array.get((i + 1) % n) - latitude;
-            //you should have paid more attention in high school geometry.
             point2_long = long_array.get((i + 1) % n) - longitude;
             angle += Angle2D(point1_lat, point1_long, point2_lat, point2_long);
         }
